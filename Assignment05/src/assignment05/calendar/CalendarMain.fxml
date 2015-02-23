@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="682.0" prefWidth="1014.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment05.calendar.CalendarMainController">
+   <left>
+      <GridPane alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="395.0" prefWidth="305.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.0" minWidth="10.0" prefWidth="280.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="0.0" prefWidth="25.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="478.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox layoutX="14.0" layoutY="5.0" style="-fx-background-color: #656c7e;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="30.0">
+                           <image>
+                              <Image url="@img/ic_action_view_as_list.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="50.0" layoutY="6.0" styleClass="menuLabel" stylesheets="@application.css" text="Agenda" textFill="WHITE" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="16.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+            <Polygon fill="#656c7e" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" GridPane.columnIndex="1">
+               <points>
+                  <Double fx:value="0.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="25" />
+                  <Double fx:value="25" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="50" />
+               </points>
+            </Polygon>
+            <HBox layoutX="14.0" layoutY="5.0" prefHeight="100.0" prefWidth="280.0" style="-fx-background-color: #2a2d33;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" GridPane.rowIndex="1">
+               <children>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/ic_action_go_to_today.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="50.0" layoutY="6.0" styleClass="menuLabel" stylesheets="@application.css" text="Kalender" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="16.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+            <Polygon fill="#2a2d33" layoutX="241.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false">
+               <points>
+                  <Double fx:value="0.0" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="25" />
+                  <Double fx:value="25" />
+                  <Double fx:value="0.0" />
+                  <Double fx:value="50" />
+               </points>
+            </Polygon>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #2a2d33;" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </left>
+   <right>
+      <TilePane minWidth="0.0" prefHeight="208.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker promptText="Velg Dato" showWeekNumbers="true" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </TilePane>
+   </right>
+   <top>
+      <AnchorPane maxHeight="80.0" maxWidth="1.7976931348623157E308" prefHeight="80.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #999;">
+         <children>
+            <AnchorPane prefHeight="100.0" prefWidth="280.0" style="-fx-background-color: #51d2b7;">
+               <children>
+                  <Label layoutX="48.0" layoutY="24.0" text="KALENDER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="773.0" layoutY="-1.0" prefHeight="100.0" prefWidth="241.0" />
+            <HBox alignment="CENTER_RIGHT" layoutX="594.0" prefHeight="100.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxHeight="50.0" style="-fx-border-radius: 10px; -fx-background-color: #e6614f; -fx-border-color: #e6614f; -fx-background-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@img/ic_action_new_event.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="4.0" right="4.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Ny Avtale" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="8.0" right="8.0" top="8.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <AnchorPane>
+                     <children>
+                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutY="18.0">
+                           <image>
+                              <Image url="@img/ic_action_email.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView layoutX="38.0" layoutY="18.0">
+                           <image>
+                              <Image url="@img/unread-temp.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label text="Nils Henrik">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/CROPPED-WIN_20140918_202618_bnw.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="16.0" right="16.0" top="16.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <VBox>
+         <children>
+            <ListView fx:id="agenda_list_view" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: white;">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></ListView>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.0" prefWidth="1.0">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="50.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="-8.0" prefHeight="45.0" prefWidth="34.0" text="23" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="3.0" layoutY="29.0" text="Mandag" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
