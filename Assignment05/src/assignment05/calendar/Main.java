@@ -17,7 +17,7 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Calendar");
-			primaryStage.getIcons().add(new Image("file:icon_32.png")); //"img/ic_action_go_to_today.png"
+			primaryStage.getIcons().add(new Image("file:icon_32.png"));
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
