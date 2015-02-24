@@ -28,7 +28,7 @@ public class CalendarMainController {
 
 	
 	
-    ObservableList<Appointment> data = FXCollections.observableArrayList(new Appointment("Kaffikaffikaffi", "Rom XXYY", LocalDate.now(), LocalTime.now(), LocalTime.now().plusHours(2)), new Appointment("Møte med X", "Rom XXYY", LocalDate.now(), LocalTime.now(), LocalTime.now().plusHours(2)), new Appointment("Møte med X", "Rom XXYY", LocalDate.now(), LocalTime.now(), LocalTime.now().plusHours(2)));
+    ObservableList<Appointment> data = FXCollections.observableArrayList(new Appointment("Kaffikaffikaffi", "Rom XXYY", LocalDate.now(), LocalTime.now(), LocalTime.now().plusHours(2)), new Appointment("MÃ¸te med X", "Rom XXYY", LocalDate.now(), LocalTime.now(), LocalTime.now().plusHours(2)), new Appointment("MÃ¸te med X", "Rom XXYY", LocalDate.now(), LocalTime.now(), LocalTime.now().plusHours(2)));
 
     @FXML
     private ListView<Appointment> agenda_list_view;
