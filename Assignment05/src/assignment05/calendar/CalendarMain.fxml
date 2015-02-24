@@ -118,7 +118,7 @@
             <AnchorPane layoutX="773.0" layoutY="-1.0" prefHeight="100.0" prefWidth="241.0" />
             <HBox alignment="CENTER_RIGHT" layoutX="594.0" prefHeight="100.0" AnchorPane.rightAnchor="0.0">
                <children>
-                  <HBox alignment="CENTER_LEFT" maxHeight="50.0" style="-fx-border-radius: 10px; -fx-background-color: #e6614f; -fx-border-color: #e6614f; -fx-background-radius: 10px;">
+                  <HBox fx:id="header_new_appointment_hbox" alignment="CENTER_LEFT" maxHeight="50.0" style="-fx-border-radius: 10px; -fx-background-color: #e6614f; -fx-border-color: #e6614f; -fx-background-radius: 10px;">
                      <children>
                         <ImageView fitHeight="50.0" fitWidth="50.0">
                            <image>

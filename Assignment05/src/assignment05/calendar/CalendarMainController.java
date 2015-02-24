@@ -4,17 +4,23 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import controller.Controller;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.concurrent.WorkerStateEvent;
+import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 
@@ -26,6 +32,10 @@ public class CalendarMainController {
 
     @FXML
     private ListView<Appointment> agenda_list_view;
+    
+
+    @FXML
+    private HBox header_new_appointment_hbox;
 
     @FXML
 	private void initialize() {
@@ -43,7 +53,27 @@ public class CalendarMainController {
      				}
                  }
              );
-    	
+    	/*
+    	header_new_appointment_hbox.setOnMouseClicked(new EventHandler<Event>() {
+
+			@Override
+			public void handle(Event event) {
+				try {
+        			FXMLLoader fxmlLoader = new FXMLLoader();
+        			Parent root = (Parent)fxmlLoader.load(this.getClass().getResourceAsStream("View.fxml"));
+        			
+        			editStage.setScene(new Scene(root));
+        			
+        			Controller controller = fxmlLoader.<Controller>getController();
+					controller.initialize(getAppointment());
+        			
+        			editStage.show();
+        		} catch(Exception e) {
+        			e.printStackTrace();
+        		}
+			}
+		});
+    	*/
     	
     }
     
